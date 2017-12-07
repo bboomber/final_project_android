@@ -135,8 +135,6 @@ public class AddNote extends AppCompatActivity {
     }
 
     public void backBtnClick(View view) {
-        EditText et = findViewById(R.id.noteEt);
-        TextView younoteTv = findViewById(R.id.yournoteTv);
-        younoteTv.setText(et.getText().toString());
+        finish();
     }
 }
