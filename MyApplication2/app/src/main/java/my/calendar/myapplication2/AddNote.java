@@ -3,6 +3,7 @@ package my.calendar.myapplication2;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
@@ -12,16 +13,17 @@ import android.widget.TextView;
 import io.realm.Realm;
 import my.calendar.myapplication2.Model.NoteItem;
 
-public class AddNote extends Activity{
+public class AddNote extends AppCompatActivity {
 
     private Realm realm;
     private int feeling = 0;
-    private Intent intent;
     String date;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_note);
+
         realm = Realm.getDefaultInstance();
         Intent intent = getIntent();
         date =  intent.getStringExtra("date");

@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">MyCalendar</string>
+    <string name="facebook_app_id">1523326834419666</string>
+    <string name="fb_login_protocol_scheme">fb1523326834419666</string>
+    <string name="title_activity_my_calendar">MyCalendar</string>
+    <string name="title_activity_test">TestActivity</string>
+
 </resources>
